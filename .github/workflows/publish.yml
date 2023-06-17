@@ -33,4 +33,5 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           build_command: pnpm run build
+          build_directory: '.nuxt/dist'
           install_command: pnpm install
