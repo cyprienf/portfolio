@@ -29,8 +29,8 @@ jobs:
 
       - name: Deploy to Netlify
         uses: jsmrcaga/action-netlify-deploy@v1.2.0
-          with:
-            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-            NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-            build_command: pnpm run build
-            install_command: pnpm install
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          build_command: pnpm run build
+          install_command: pnpm install
