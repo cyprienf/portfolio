@@ -1,3 +1,1 @@
-<template>
-  OUI
-</template>
+<template>OUI</template>
