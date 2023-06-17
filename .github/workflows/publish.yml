@@ -28,12 +28,9 @@ jobs:
         run: pnpm run build
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.2
-        with:
-          publish-dir: '../nuxt/dist'
-          production-branch: main
-          deploy-message: 'Deploy from GitHub Actions'
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 1
+        uses: jsmrcaga/action-netlify-deploy@v1.2.0
+          with:
+            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+            NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+            build_command: pnpm run build
+            install_command: pnpm install
