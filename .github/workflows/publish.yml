@@ -32,6 +32,7 @@ jobs:
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_MESSAGE: 'Deploy from Github'
           build_command: pnpm run build
-          build_directory: '.nuxt/dist'
+          build_directory: '.output'
           install_command: pnpm install
