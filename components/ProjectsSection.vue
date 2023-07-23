@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-const { data: projects } = await useFetch("/api/projects");
+const { data: projects } = await useFetch('/api/projects');
 </script>
