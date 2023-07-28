@@ -15,15 +15,15 @@ model Project {
 }
 
 model SkillCategory {
-  id     Int     @id @default(autoincrement()) @db.SmallInt
-  name   String  @default("") @db.VarChar
-  skills Skill[]
+  id        Int       @id @default(autoincrement()) @db.SmallInt
+  createdAt DateTime? @default(now()) @db.Timestamptz(6)
+  name      String    @default("") @db.VarChar
+  skills    Skill[]
 }
 
 model Skill {
   id         Int           @id @default(autoincrement()) @db.SmallInt
   createdAt  DateTime?     @default(now()) @db.Timestamptz(6)
-  updatedAt  DateTime?     @updatedAt @db.Timestamptz(6)
   name       String        @default("") @db.VarChar
   logo       String        @default("") @db.VarChar
   Category   SkillCategory @relation(fields: [categoryId], references: [id])
