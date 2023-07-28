@@ -5,6 +5,12 @@
   </div>
 </template>
 
+<script lang="ts" setup>
+useHead({
+  title: 'Cyprien Floquet - Portfolio',
+});
+</script>
+
 <style lang="scss" scoped>
 .main {
   margin: 0rem 8rem;
