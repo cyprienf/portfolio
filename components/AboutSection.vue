@@ -4,13 +4,14 @@
       <img :src="picture" alt="picture" />
     </div>
 
-    <div class="about-section__title">
-      Software engineer, front end developer and movies lover
-    </div>
+    <h1 class="about-section__title">
+      Lorem ipsum dolor sit amet consectetur adipi sicing
+    </h1>
 
     <div class="about-section__bio">
-      Hi I'm Cyprien, a french frontend developer with three years of
-      experience.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae facere
+      quisquam iste laboriosam eius dicta aspernatur quam laudantium ipsa aut in
+      eos nam ratione
     </div>
 
     <div class="about-section__socials">
@@ -45,21 +46,19 @@ import Trakt from '@/assets/icons/socials/trakt.svg';
   display: flex;
   flex-direction: column;
 
-  padding: 8rem 2rem 2rem 2rem;
-
-  width: 70%;
-
   &__picture img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
   }
 
   &__title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+
+    width: 80%;
   }
 
   &__bio {
@@ -69,11 +68,11 @@ import Trakt from '@/assets/icons/socials/trakt.svg';
 
   &__socials {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
 
     &__icon {
-      width: 2rem;
-      height: 2rem;
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 }

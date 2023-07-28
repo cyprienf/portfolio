@@ -8,8 +8,24 @@ datasource db {
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
-model project {
-  id         Int       @id @default(autoincrement()) @db.SmallInt
-  created_at DateTime? @default(now()) @db.Timestamptz(6)
-  name       String?   @default("") @db.VarChar
+model Project {
+  id        Int       @id @default(autoincrement()) @db.SmallInt
+  createdAt DateTime? @default(now()) @db.Timestamptz(6)
+  name      String?   @default("") @db.VarChar
+}
+
+model SkillCategory {
+  id        Int       @id @default(autoincrement()) @db.SmallInt
+  createdAt DateTime? @default(now()) @db.Timestamptz(6)
+  name      String    @default("") @db.VarChar
+  skills    Skill[]
+}
+
+model Skill {
+  id         Int           @id @default(autoincrement()) @db.SmallInt
+  createdAt  DateTime?     @default(now()) @db.Timestamptz(6)
+  name       String        @default("") @db.VarChar
+  logo       String        @default("") @db.VarChar
+  Category   SkillCategory @relation(fields: [categoryId], references: [id])
+  categoryId Int           @db.SmallInt
 }
