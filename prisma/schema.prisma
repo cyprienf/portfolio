@@ -34,6 +34,7 @@ model Work {
   id          Int       @id @default(autoincrement()) @db.SmallInt
   createdAt   DateTime? @default(now()) @db.Timestamptz(6)
   company     String    @default("") @db.VarChar
+  position    String    @default("") @db.VarChar
   startDate   DateTime  @default(now()) @db.Timestamp
   endDate     DateTime? @default(now()) @db.Timestamp
   description String    @default("") @db.Text
