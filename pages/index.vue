@@ -1,7 +1,10 @@
 <template>
   <div class="main">
     <AboutSection />
+    <hr />
     <SkillsSkillSection />
+    <hr />
+    <WorksSection />
     <AppFooter />
   </div>
 </template>
