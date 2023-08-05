@@ -1,10 +1,9 @@
 <template>
   <div class="main">
     <AboutSection />
-    <hr />
-    <SkillsSkillSection />
-    <hr />
     <WorksSection />
+    <ProjectsSection />
+    <SkillsSection />
     <AppFooter />
   </div>
 </template>
@@ -19,9 +18,11 @@ useHead({
 .main {
   margin: 0rem 8rem;
   background-color: $white;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 
   padding: 4rem 2rem 2rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 </style>

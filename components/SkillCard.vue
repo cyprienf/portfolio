@@ -6,7 +6,7 @@
     />
     <div class="skill-card__texts">
       <div class="skill-card__texts__name">{{ skill.name }}</div>
-      <div class="skill-card__texts__category">{{ category }}</div>
+      <div class="skill-card__texts__category">{{ skill.Category.name }}</div>
     </div>
   </div>
 </template>
