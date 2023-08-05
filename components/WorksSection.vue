@@ -1,6 +1,8 @@
 <template>
   <div class="works-section">
-    <h2 class="works-section__title">Works</h2>
+    <h2 class="works-section__title">
+      <div>Work experiences</div>
+    </h2>
     <div class="works-section__items">
       <div
         v-for="work in works"
@@ -46,13 +48,18 @@ const formatDate = (date: string | null): string => {
   margin-top: 1rem;
 
   &__title {
-    margin-bottom: 0.75rem;
+    margin: 0px 0px 1.45rem;
+    padding: 0px;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.62671rem;
+    line-height: 1.1;
   }
 
   &__items {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     margin-left: 0.5rem;
 
     &__details {
@@ -67,6 +74,10 @@ const formatDate = (date: string | null): string => {
       &__dates {
         margin-bottom: 0.5rem;
         color: #a4a4a4;
+      }
+
+      &__description {
+        font-size: 0.95em;
       }
     }
   }

@@ -9,9 +9,13 @@ datasource db {
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model Project {
-  id        Int       @id @default(autoincrement()) @db.SmallInt
-  createdAt DateTime? @default(now()) @db.Timestamptz(6)
-  name      String?   @default("") @db.VarChar
+  id          Int       @id @default(autoincrement()) @db.SmallInt
+  createdAt   DateTime? @default(now()) @db.Timestamptz(6)
+  title       String    @default("") @db.VarChar
+  image       String    @default("") @db.VarChar
+  github      String?   @default("") @db.VarChar
+  link        String?   @default("") @db.VarChar
+  description String    @default("") @db.Text
 }
 
 model SkillCategory {
