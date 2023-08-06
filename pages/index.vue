@@ -17,7 +17,6 @@ useHead({
 <style lang="scss" scoped>
 .main {
   margin: 0rem 8rem;
-  background-color: $white;
 
   padding: 4rem 2rem 2rem 2rem;
 

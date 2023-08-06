@@ -29,9 +29,10 @@ const { data: skills } = await useFetch('/api/skills');
   }
 
   &__items {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 }
 </style>

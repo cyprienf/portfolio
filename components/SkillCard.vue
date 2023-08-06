@@ -2,7 +2,7 @@
   <div class="skill-card">
     <img
       class="skill-card__logo"
-      :src="`/assets/icons/skills/${skill.logo}.png`"
+      :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/icons/skills/${skill.logo}.png`"
     />
     <div class="skill-card__texts">
       <div class="skill-card__texts__name">{{ skill.name }}</div>
@@ -25,8 +25,10 @@ defineProps<{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 25px;
-  width: 12rem;
+  gap: 1rem;
+
+  min-width: 200px;
+  max-width: 200px;
 
   &__logo {
     width: 35px;

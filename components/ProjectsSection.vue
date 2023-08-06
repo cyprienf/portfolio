@@ -30,10 +30,9 @@ const { data: projects } = await useFetch('/api/projects');
   }
 
   &__items {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 15px;
-    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 </style>
