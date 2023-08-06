@@ -40,6 +40,7 @@ defineProps<{
   border: 1px solid #e2e8f0;
   padding: 0.75rem;
   border-radius: 0.25rem;
+  word-break: break-word;
 
   &__title {
     font-weight: 700;
