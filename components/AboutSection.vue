@@ -9,9 +9,8 @@
     </h1>
 
     <div class="about-section__bio">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae facere
-      quisquam iste laboriosam eius dicta aspernatur quam laudantium ipsa aut in
-      eos nam ratione
+      I also love data vizualization and creating graphs and maps with the D3.js
+      and Leaflet libraries. My passions are cinema, reading and piano.
     </div>
 
     <div class="about-section__socials">
