@@ -10,7 +10,7 @@
         class="works-section__items__details"
       >
         <div class="works-section__items__details__company">
-          {{ work.position }} @ {{ work.company }}
+          {{ work.position }} - {{ work.company }}
         </div>
 
         <div class="works-section__items__details__dates">
@@ -18,10 +18,7 @@
         </div>
 
         <div class="works-section__items__details__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est,
-          alias libero accusantium autem doloribus quaerat magnam, nesciunt,
-          exercitationem aspernatur placeat eius nemo similique quo ratione quia
-          hic at impedit?
+          {{ work.description }}
         </div>
       </div>
     </div>
@@ -78,6 +75,7 @@ const formatDate = (date: string | null): string => {
 
       &__description {
         font-size: 0.95em;
+        white-space: pre-wrap;
       }
     }
   }
