@@ -20,6 +20,13 @@
       </NuxtLink>
 
       <NuxtLink
+        to="https://observablehq.com/@cyprienf?tab=profile"
+        target="_blank"
+      >
+        <Observablehq class="about-section__socials__icon" />
+      </NuxtLink>
+
+      <NuxtLink
         to="https://www.linkedin.com/in/cyprien-floquet-095165109/"
         target="_blank"
       >
@@ -28,13 +35,6 @@
 
       <NuxtLink to="https://trakt.tv/users/cyprienf" target="_blank">
         <Trakt class="about-section__socials__icon" />
-      </NuxtLink>
-
-      <NuxtLink
-        to="https://observablehq.com/@cyprienf?tab=profile"
-        target="_blank"
-      >
-        <Observablehq class="about-section__socials__icon" />
       </NuxtLink>
     </div>
   </section>
