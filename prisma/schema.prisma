@@ -30,6 +30,7 @@ model Skill {
   createdAt  DateTime?     @default(now()) @db.Timestamptz(6)
   name       String        @default("") @db.VarChar
   logo       String        @default("") @db.VarChar
+  enabled    Boolean       @default(true) @db.Boolean
   Category   SkillCategory @relation(fields: [categoryId], references: [id])
   categoryId Int           @db.SmallInt
 }
