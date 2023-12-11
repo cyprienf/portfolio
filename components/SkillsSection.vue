@@ -5,7 +5,7 @@
     </h2>
     <div class="skills-section__items">
       <div v-for="skill in skills" :key="skill.id">
-        <SkillCard :skill="skill" />
+        <SkillCard v-if="skill.enabled" :skill="skill" />
       </div>
     </div>
   </div>
