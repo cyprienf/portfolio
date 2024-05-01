@@ -20,19 +20,16 @@ const { data: skills } = await useFetch('/api/skills');
   margin-top: 1rem;
 
   &__title {
-    margin: 0px 0px 1.45rem;
-    padding: 0px;
-    color: inherit;
-    font-weight: bold;
-    font-size: 1.62671rem;
-    line-height: 1.1;
+    font-weight: 600;
+    font-size: $font-large;
+    margin-bottom: $spacing-medium;
   }
 
   &__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
   }
 }
 </style>

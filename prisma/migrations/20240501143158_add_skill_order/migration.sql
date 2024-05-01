@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Skill" ADD COLUMN     "order" SMALLINT NOT NULL DEFAULT 0;

@@ -7,7 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model Project {
   id          Int       @id @default(autoincrement()) @db.SmallInt
   createdAt   DateTime? @default(now()) @db.Timestamptz(6)
@@ -22,15 +21,18 @@ model SkillCategory {
   id        Int       @id @default(autoincrement()) @db.SmallInt
   createdAt DateTime? @default(now()) @db.Timestamptz(6)
   name      String    @default("") @db.VarChar
-  skills    Skill[]
+
+  skills Skill[]
 }
 
 model Skill {
-  id         Int           @id @default(autoincrement()) @db.SmallInt
-  createdAt  DateTime?     @default(now()) @db.Timestamptz(6)
-  name       String        @default("") @db.VarChar
-  logo       String        @default("") @db.VarChar
-  enabled    Boolean       @default(true) @db.Boolean
+  id        Int       @id @default(autoincrement()) @db.SmallInt
+  createdAt DateTime? @default(now()) @db.Timestamptz(6)
+  name      String    @default("") @db.VarChar
+  logo      String    @default("") @db.VarChar
+  enabled   Boolean   @default(true) @db.Boolean
+  order     Int       @default(0) @db.SmallInt
+
   Category   SkillCategory @relation(fields: [categoryId], references: [id])
   categoryId Int           @db.SmallInt
 }

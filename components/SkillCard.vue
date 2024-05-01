@@ -31,20 +31,20 @@ defineProps<{
   max-width: 200px;
 
   &__logo {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   &__texts {
     &__name {
       font-size: 0.95rem;
       font-weight: 500;
+      margin-bottom: 0.4rem;
     }
 
     &__category {
       font-size: 0.9rem;
       color: #a4a4a4;
-      font-weight: 300;
     }
   }
 

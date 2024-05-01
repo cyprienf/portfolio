@@ -4,9 +4,7 @@ const prisma = new PrismaClient();
 
 export default defineEventHandler(async () => {
   const data = await prisma.work.findMany({
-    orderBy: {
-      id: 'desc',
-    },
+    orderBy: { startDate: 'desc' },
   });
 
   return data;
