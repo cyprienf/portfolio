@@ -3,23 +3,20 @@
     <h2 class="works-section__title">
       <div>Work experiences</div>
     </h2>
+
     <div class="works-section__items">
-      <div
-        v-for="work in works"
-        :key="work.id"
-        class="works-section__items__details"
-      >
-        <div class="works-section__items__details__company">
-          {{ work.position }} - {{ work.company }}
-        </div>
+      <div v-for="work in works" :key="work.id" class="works-section__items__details">
+        <p class="works-section__items__details__company">
+          {{ work.position }} @{{ work.company }}
+        </p>
 
-        <div class="works-section__items__details__dates">
+        <p class="works-section__items__details__dates">
           {{ formatDate(work.startDate) }} - {{ formatDate(work.endDate) }}
-        </div>
+        </p>
 
-        <div class="works-section__items__details__description">
+        <p class="works-section__items__details__description">
           {{ work.description }}
-        </div>
+        </p>
       </div>
     </div>
   </div>
@@ -42,39 +39,34 @@ const formatDate = (date: string | null): string => {
 
 <style lang="scss" scoped>
 .works-section {
-  margin-top: 1rem;
-
   &__title {
-    margin: 0px 0px 1.45rem;
-    padding: 0px;
-    color: inherit;
-    font-weight: bold;
-    font-size: 1.62671rem;
-    line-height: 1.1;
+    font-weight: 600;
+    font-size: $font-large;
+    margin-bottom: $spacing-medium;
   }
 
   &__items {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: 0.5rem;
+    gap: $spacing-large;
 
     &__details {
       display: flex;
       flex-direction: column;
+      gap: $spacing-xsmall;
 
       &__company {
-        font-weight: 700;
-        margin-bottom: 0.5rem;
+        font-weight: 500;
       }
 
       &__dates {
-        margin-bottom: 0.5rem;
+        font-size: 0.95em;
         color: #a4a4a4;
       }
 
       &__description {
         font-size: 0.95em;
+        line-height: 1.25;
         white-space: pre-wrap;
       }
     }

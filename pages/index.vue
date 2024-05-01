@@ -2,8 +2,8 @@
   <div class="main">
     <AboutSection />
     <WorksSection />
-    <ProjectsSection />
     <SkillsSection />
+    <ProjectsSection />
     <AppFooter />
   </div>
 </template>
@@ -16,12 +16,14 @@ useHead({
 
 <style lang="scss" scoped>
 .main {
-  margin: 0rem 8rem;
+  padding: 3rem 6rem 1rem 6rem;
 
-  padding: 4rem 2rem 2rem 2rem;
+  @media (width <= 768px) {
+    padding: 3rem 2rem 1rem 2rem;
+  }
 
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: $spacing-xxlarge;
 }
 </style>

@@ -4,31 +4,25 @@
       <img :src="picture" alt="picture" />
     </div>
 
-    <h1 class="about-section__title">
-      👋 Hello there! I'm Cyprien a frontend engineer
-    </h1>
+    <h1 class="about-section__title">👋 Hello there! I'm Cyprien, a software engineer</h1>
 
-    <div class="about-section__bio">
-      I also love data vizualization and creating graphs and maps with the D3.js
-      and Leaflet libraries. My passions are cinema, reading and piano.
-    </div>
+    <p class="about-section__bio">
+      As a fullstack developer I love working with technologies like Vue, Nuxt, Nest.js and Prisma.
+      I'm also big fan of librairies like D3.js and Leaflet to make data vizualization dashboards,
+      creating graphs and maps. I spend most of my free time watching movies, reading books and
+      playing piano.
+    </p>
 
     <div class="about-section__socials">
       <NuxtLink to="https://github.com/CyprienF" target="_blank">
         <Github class="about-section__socials__icon" />
       </NuxtLink>
 
-      <NuxtLink
-        to="https://observablehq.com/@cyprienf?tab=profile"
-        target="_blank"
-      >
+      <NuxtLink to="https://observablehq.com/@cyprienf?tab=profile" target="_blank">
         <Observablehq class="about-section__socials__icon" />
       </NuxtLink>
 
-      <NuxtLink
-        to="https://www.linkedin.com/in/cyprien-floquet-095165109/"
-        target="_blank"
-      >
+      <NuxtLink to="https://www.linkedin.com/in/cyprien-floquet-095165109/" target="_blank">
         <Linkedin class="about-section__socials__icon" />
       </NuxtLink>
 
@@ -40,12 +34,11 @@
 </template>
 
 <script lang="ts" setup>
-import picture from '@/assets/picture.jpg';
-
 import Github from '@/assets/icons/socials/github.svg';
 import Linkedin from '@/assets/icons/socials/linkedin.svg';
-import Trakt from '@/assets/icons/socials/trakt.svg';
 import Observablehq from '@/assets/icons/socials/observablehq.svg';
+import Trakt from '@/assets/icons/socials/trakt.svg';
+import picture from '@/assets/picture.jpg';
 </script>
 
 <style lang="scss" scoped>
@@ -54,31 +47,31 @@ import Observablehq from '@/assets/icons/socials/observablehq.svg';
   flex-direction: column;
 
   &__picture img {
-    width: 60px;
-    height: 60px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
+    margin-bottom: $spacing-large;
   }
 
   &__title {
-    font-size: 1.75rem;
+    font-size: $font-xlarge;
     font-weight: 700;
-    margin-bottom: 1rem;
-
-    width: 80%;
+    margin-bottom: $spacing-medium;
   }
 
   &__bio {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    margin-bottom: $spacing-large;
+    line-height: 1.25;
   }
 
   &__socials {
     display: flex;
-    gap: 1.25rem;
+    gap: $spacing-medium;
 
     &__icon {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 1.75rem;
+      height: 1.75rem;
     }
   }
 }

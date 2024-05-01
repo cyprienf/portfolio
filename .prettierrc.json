@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "semi": true,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "printWidth": 100,
+  "trailingComma": "all",
+  "importOrder": [
+    "^vue|vue-$",
+    "^@/(router|App.vue)$",
+    "^@/components/(.*)$",
+    "^@/assets/(.*)$",
+    "^@/(models|types|enums)/(.*)$",
+    "^@/services/(.*)$",
+    "^primevue/(.*)$",
+    "<THIRD_PARTY_MODULES>"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports"
+  ]
+}

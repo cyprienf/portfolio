@@ -1,8 +1,6 @@
 <template>
   <div class="projects-section">
-    <h2 class="projects-section__title">
-      <div>Projects</div>
-    </h2>
+    <h2 class="projects-section__title">Projects</h2>
 
     <div class="projects-section__items">
       <div v-for="project in projects" :key="project.id">
@@ -18,21 +16,16 @@ const { data: projects } = await useFetch('/api/projects');
 
 <style lang="scss" scoped>
 .projects-section {
-  margin-top: 1rem;
-
   &__title {
-    margin: 0px 0px 1.45rem;
-    padding: 0px;
-    color: inherit;
-    font-weight: bold;
-    font-size: 1.62671rem;
-    line-height: 1.1;
+    font-weight: 600;
+    font-size: $font-large;
+    margin-bottom: $spacing-medium;
   }
 
   &__items {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: $spacing-xsmall;
   }
 }
 </style>
