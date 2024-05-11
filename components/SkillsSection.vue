@@ -1,8 +1,9 @@
 <template>
-  <div class="skills-section">
+  <div id="skills" class="skills-section">
     <h2 class="skills-section__title">
       <div>Skills</div>
     </h2>
+
     <div class="skills-section__items">
       <div v-for="skill in skills" :key="skill.id">
         <SkillCard v-if="skill.enabled" :skill="skill" />

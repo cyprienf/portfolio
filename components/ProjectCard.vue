@@ -19,7 +19,7 @@
         target="_blank"
         rel="noopener"
       >
-        <Button icon="pi pi-link" label="Lien" severity="secondary" outlined />
+        <Button icon="pi pi-link" label="Website" severity="secondary" outlined />
       </NuxtLink>
     </div>
   </div>

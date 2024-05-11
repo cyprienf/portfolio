@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { Skill } from '@prisma/client';
+import type { Skill } from '@prisma/client';
 
 defineProps<{
   category: string;
