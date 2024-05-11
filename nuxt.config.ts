@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     'primevue/resources/themes/aura-light-green/theme.css',
     'primeicons/primeicons.css',
   ],
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    },
+  },
   vite: {
     plugins: [svgLoader()],
     css: {
