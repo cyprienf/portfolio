@@ -1,8 +1,6 @@
 <template>
   <div id="works" class="works-section">
-    <h2 class="works-section__title">
-      <div>Work experiences</div>
-    </h2>
+    <TitleComponent label="Work experiences" size="large" />
 
     <div class="works-section__items">
       <div v-for="work in works" :key="work.id" class="works-section__items__details">
@@ -39,12 +37,6 @@ const formatDate = (date: string | null): string => {
 
 <style lang="scss" scoped>
 .works-section {
-  &__title {
-    font-weight: 600;
-    font-size: $font-large;
-    margin-bottom: $spacing-medium;
-  }
-
   &__items {
     display: flex;
     flex-direction: column;

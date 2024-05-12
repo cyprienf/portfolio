@@ -1,6 +1,6 @@
 <template>
   <div id="projects" class="projects-section">
-    <h2 class="projects-section__title">Projects</h2>
+    <TitleComponent label="Projects" size="large" />
 
     <div class="projects-section__items">
       <div v-for="project in projects" :key="project.id">
@@ -16,12 +16,6 @@ const { data: projects } = await useFetch('/api/projects');
 
 <style lang="scss" scoped>
 .projects-section {
-  &__title {
-    font-weight: 600;
-    font-size: $font-large;
-    margin-bottom: $spacing-medium;
-  }
-
   &__items {
     display: flex;
     flex-direction: column;

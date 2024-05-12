@@ -1,10 +1,10 @@
 <template>
-  <section id="about" class="about-section">
+  <section class="about-section">
     <div class="about-section__picture">
       <img :src="picture" alt="picture" />
     </div>
 
-    <h1 class="about-section__title">👋 Hello there! I'm Cyprien, a software engineer</h1>
+    <TitleComponent label="👋 Hello there! I'm Cyprien, a software engineer" size="xlarge" />
 
     <p class="about-section__bio">
       As a fullstack developer I love working with technologies like Vue, Nuxt, Nest.js and Prisma.
@@ -53,16 +53,10 @@ import picture from '@/assets/picture.jpg';
     margin-bottom: $spacing-large;
   }
 
-  &__title {
-    font-size: $font-xlarge;
-    font-weight: 700;
-    margin-bottom: $spacing-medium;
-  }
-
   &__bio {
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: $spacing-large;
-    line-height: 1.25;
+    line-height: 1.3;
   }
 
   &__socials {
