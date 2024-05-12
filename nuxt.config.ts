@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     'primevue/resources/themes/aura-light-green/theme.css',
     'primeicons/primeicons.css',
   ],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
   router: {
     options: {
       scrollBehaviorType: 'smooth',

@@ -1,7 +1,7 @@
 <template>
   <div class="app-header">
     <ul class="app-header__categories">
-      <NuxtLink :to="{ path: '/', hash: '#about' }"><li>Home</li></NuxtLink>
+      <NuxtLink :to="{ path: '/' }"><li>Home</li></NuxtLink>
       <NuxtLink :to="{ path: '/', hash: '#works' }"><li>Works</li></NuxtLink>
       <NuxtLink :to="{ path: '/', hash: '#skills' }"><li>Skills</li></NuxtLink>
       <NuxtLink :to="{ path: '/', hash: '#projects' }"><li>Projects</li></NuxtLink>
@@ -22,6 +22,10 @@
     justify-content: flex-end;
 
     gap: calc($spacing-medium * 3);
+
+    @media (width <= 768px) {
+      gap: calc($spacing-medium * 1);
+    }
 
     font-weight: $font-weight-small;
     font-size: calc($font-medium * 0.9);

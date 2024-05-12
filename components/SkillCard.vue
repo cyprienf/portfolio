@@ -30,6 +30,11 @@ defineProps<{
   min-width: 200px;
   max-width: 200px;
 
+  @media (width <= 768px) {
+    min-width: 150px;
+    max-width: 150px;
+  }
+
   &__logo {
     width: 30px;
     height: 30px;

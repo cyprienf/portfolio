@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about-section">
+  <section class="about-section">
     <div class="about-section__picture">
       <img :src="picture" alt="picture" />
     </div>
@@ -54,9 +54,9 @@ import picture from '@/assets/picture.jpg';
   }
 
   &__bio {
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: $spacing-large;
-    line-height: 1.25;
+    line-height: 1.3;
   }
 
   &__socials {
