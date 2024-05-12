@@ -4,7 +4,7 @@
       <img :src="picture" alt="picture" />
     </div>
 
-    <h1 class="about-section__title">👋 Hello there! I'm Cyprien, a software engineer</h1>
+    <TitleComponent label="👋 Hello there! I'm Cyprien, a software engineer" size="xlarge" />
 
     <p class="about-section__bio">
       As a fullstack developer I love working with technologies like Vue, Nuxt, Nest.js and Prisma.
@@ -51,12 +51,6 @@ import picture from '@/assets/picture.jpg';
     height: 4rem;
     border-radius: 50%;
     margin-bottom: $spacing-large;
-  }
-
-  &__title {
-    font-size: $font-xlarge;
-    font-weight: 700;
-    margin-bottom: $spacing-medium;
   }
 
   &__bio {

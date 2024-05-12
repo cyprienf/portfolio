@@ -5,6 +5,7 @@
       <NuxtLink :to="{ path: '/', hash: '#works' }"><li>Works</li></NuxtLink>
       <NuxtLink :to="{ path: '/', hash: '#skills' }"><li>Skills</li></NuxtLink>
       <NuxtLink :to="{ path: '/', hash: '#projects' }"><li>Projects</li></NuxtLink>
+      <NuxtLink :to="{ path: '/about' }"><li>About</li></NuxtLink>
     </ul>
   </div>
 </template>
@@ -18,21 +19,12 @@
   &__categories {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
 
-    padding: 0.4rem 8rem;
+    gap: calc($spacing-medium * 3);
 
-    gap: 45px;
-
-    @media (width <= 768px) {
-      padding: 0.4rem 1rem;
-    }
-
-    font-weight: 500;
-    font-size: 1rem;
-    border: 1px solid #e2e8f0;
-
-    border-radius: 1rem;
+    font-weight: $font-weight-small;
+    font-size: calc($font-medium * 0.9);
   }
 }
 </style>

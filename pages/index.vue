@@ -17,7 +17,7 @@ useHead({
 
 <style lang="scss" scoped>
 .main {
-  padding: 3rem 6rem 1rem 6rem;
+  padding: 1.5rem 6rem 1rem 6rem;
 
   @media (width <= 768px) {
     padding: 3rem 2rem 1rem 2rem;
