@@ -11,7 +11,7 @@
     "^@/components/(.*)$",
     "^@/assets/(.*)$",
     "^@/(models|types|enums)/(.*)$",
-    "^@/services/(.*)$",
+    "^@/(services|stores)/(.*)$",
     "^primevue/(.*)$",
     "<THIRD_PARTY_MODULES>"
   ],
