@@ -21,7 +21,13 @@
 </template>
 
 <script lang="ts" setup>
-const { data: works } = await useFetch('/api/works');
+import { useWorkStore } from '@/stores/work';
+
+import { storeToRefs } from 'pinia';
+
+const workStore = useWorkStore();
+
+const { works } = storeToRefs(workStore);
 
 const formatDate = (date: string | null): string => {
   if (!date) {

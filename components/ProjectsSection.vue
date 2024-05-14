@@ -11,7 +11,13 @@
 </template>
 
 <script setup lang="ts">
-const { data: projects } = await useFetch('/api/projects');
+import { useProjectStore } from '@/stores/project';
+
+import { storeToRefs } from 'pinia';
+
+const projectStore = useProjectStore();
+
+const { projects } = storeToRefs(projectStore);
 </script>
 
 <style lang="scss" scoped>

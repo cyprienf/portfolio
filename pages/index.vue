@@ -9,12 +9,6 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-useHead({
-  title: 'Cyprien Floquet - Portfolio',
-});
-</script>
-
 <style lang="scss" scoped>
 .main {
   padding: 1.5rem 10rem 1rem 10rem;

@@ -11,7 +11,13 @@
 </template>
 
 <script lang="ts" setup>
-const { data: skills } = await useFetch('/api/skills');
+import { useSkillStore } from '@/stores/skill';
+
+import { storeToRefs } from 'pinia';
+
+const skillStore = useSkillStore();
+
+const { skills } = storeToRefs(skillStore);
 </script>
 
 <style lang="scss" scoped>

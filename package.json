@@ -30,6 +30,7 @@
     "vite-svg-loader": "4.0.0"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
     "primeicons": "7.0.0",
     "primevue": "3.52.0"
   }
