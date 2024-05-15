@@ -10,7 +10,7 @@ datasource db {
 model Project {
   id          Int       @id @default(autoincrement()) @db.SmallInt
   createdAt   DateTime? @default(now()) @db.Timestamptz(6)
-  title       String    @default("") @db.VarChar
+  name       String    @default("") @db.VarChar
   image       String    @default("") @db.VarChar
   github      String?   @default("") @db.VarChar
   link        String?   @default("") @db.VarChar
@@ -34,7 +34,7 @@ model Skill {
   enabled   Boolean   @default(true) @db.Boolean
   order     Int       @default(0) @db.SmallInt
 
-  Category   SkillCategory @relation(fields: [categoryId], references: [id])
+  category   SkillCategory @relation(fields: [categoryId], references: [id])
   categoryId Int           @db.SmallInt
 
   projects Project[]

@@ -1,6 +1,6 @@
 <template>
   <div class="project-card">
-    <p class="project-card__title">{{ project.title }}</p>
+    <p class="project-card__name">{{ project.name }}</p>
     <p class="project-card__description">{{ project.description }}</p>
 
     <div class="project-card__skills">
@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Project } from '@prisma/client';
+import type { Project } from '@/models/project';
 
 defineProps<{
   project: Project;
@@ -52,7 +52,7 @@ defineProps<{
   border: 1px solid #e2e8f0;
   border-radius: 0.25rem;
 
-  &__title {
+  &__name {
     font-weight: 500;
     margin-bottom: 1em;
   }

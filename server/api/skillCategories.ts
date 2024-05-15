@@ -4,9 +4,7 @@ const prisma = new PrismaClient();
 
 export default defineEventHandler(async () => {
   const data = await prisma.skillCategory.findMany({
-    orderBy: {
-      id: 'asc',
-    },
+    orderBy: { id: 'asc' },
   });
 
   return data;
