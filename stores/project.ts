@@ -1,4 +1,4 @@
-import type { Project } from '@prisma/client';
+import type { Project } from '@/models/project';
 
 export const useProjectStore = defineStore('project', () => {
   const projects: Ref<Project[]> = ref([]);

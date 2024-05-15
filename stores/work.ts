@@ -1,4 +1,4 @@
-import type { Work } from '@prisma/client';
+import type { Work } from '@/models/work';
 
 export const useWorkStore = defineStore('work', () => {
   const works: Ref<Work[]> = ref([]);

@@ -6,16 +6,15 @@
     />
     <div class="skill-card__texts">
       <div class="skill-card__texts__name">{{ skill.name }}</div>
-      <div class="skill-card__texts__category">{{ skill.Category.name }}</div>
+      <div class="skill-card__texts__category">{{ skill.category.name }}</div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { Skill } from '@prisma/client';
+import type { Skill } from '@/models/skill';
 
 defineProps<{
-  category: string;
   skill: Skill;
 }>();
 </script>
