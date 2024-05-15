@@ -37,7 +37,9 @@
 
         <li>
           Another area I really enjoy is 📊 data visualization. I use the D3.js and Leaflet
-          libraries to create dashboards, graphs and maps.
+          libraries to create dashboards, graphs and maps. You can find all my data viz projects
+          <NuxtLink to="/dataviz">here</NuxtLink> and on my
+          <a href="https://observablehq.com/@cyprienf" target="_blank">Observable profile</a>.
         </li>
 
         <li>
@@ -55,10 +57,6 @@
     <AppFooter />
   </div>
 </template>
-
-<script setup lang="ts">
-import TitleComponent from '../components/TitleComponent.vue';
-</script>
 
 <style scoped lang="scss">
 .about-page {
