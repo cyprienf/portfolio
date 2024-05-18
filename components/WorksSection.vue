@@ -1,6 +1,6 @@
 <template>
   <div id="works" class="works-section">
-    <TitleComponent label="Work experiences" size="large" />
+    <TitleComponent label="Education & Work experiences" size="large" />
 
     <div class="works-section__items">
       <div v-for="work in works" :key="work.id" class="works-section__items__details">
@@ -17,6 +17,18 @@
         </p>
       </div>
     </div>
+
+    <NuxtLink
+      to="https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/cv.pdf"
+      target="_blank"
+    >
+      <Button
+        class="works-section__cv"
+        icon="pi pi-download"
+        label="Curriculum vitae"
+        severity="contrast"
+      />
+    </NuxtLink>
   </div>
 </template>
 
@@ -67,6 +79,15 @@ const formatDate = (date: string | null): string => {
         line-height: 1.25;
         white-space: pre-wrap;
       }
+    }
+  }
+
+  &__cv {
+    margin-top: 20px;
+    font-size: 0.95rem;
+
+    :deep(.p-button-icon) {
+      margin-right: 10px;
     }
   }
 }
