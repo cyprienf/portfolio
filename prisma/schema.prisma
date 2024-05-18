@@ -7,42 +7,55 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model DataViz {
+  id          Int      @id @default(autoincrement()) @db.SmallInt
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+  name        String   @default("") @db.VarChar
+  thumbnail   String?  @default("") @db.VarChar
+  github      String?  @default("") @db.VarChar
+  link        String?  @default("") @db.VarChar
+  description String?  @default("") @db.Text
+  skills      Skill[]
+}
+
 model Project {
-  id          Int       @id @default(autoincrement()) @db.SmallInt
-  createdAt   DateTime? @default(now()) @db.Timestamptz(6)
-  name       String    @default("") @db.VarChar
-  image       String    @default("") @db.VarChar
-  github      String?   @default("") @db.VarChar
-  link        String?   @default("") @db.VarChar
-  description String    @default("") @db.Text
+  id          Int      @id @default(autoincrement()) @db.SmallInt
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+  name        String   @default("") @db.VarChar
+  image       String   @default("") @db.VarChar
+  github      String?  @default("") @db.VarChar
+  link        String?  @default("") @db.VarChar
+  description String   @default("") @db.Text
   skills      Skill[]
 }
 
 model SkillCategory {
-  id        Int       @id @default(autoincrement()) @db.SmallInt
-  createdAt DateTime? @default(now()) @db.Timestamptz(6)
-  name      String    @default("") @db.VarChar
+  id        Int      @id @default(autoincrement()) @db.SmallInt
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  name      String   @default("") @db.VarChar
 
   skills Skill[]
 }
 
 model Skill {
-  id        Int       @id @default(autoincrement()) @db.SmallInt
-  createdAt DateTime? @default(now()) @db.Timestamptz(6)
-  name      String    @default("") @db.VarChar
-  logo      String    @default("") @db.VarChar
-  enabled   Boolean   @default(true) @db.Boolean
-  order     Int       @default(0) @db.SmallInt
+  id        Int      @id @default(autoincrement()) @db.SmallInt
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  name      String   @default("") @db.VarChar
+  logo      String   @default("") @db.VarChar
+  enabled   Boolean  @default(true) @db.Boolean
+  order     Int      @default(0) @db.SmallInt
 
   category   SkillCategory @relation(fields: [categoryId], references: [id])
   categoryId Int           @db.SmallInt
 
-  projects Project[]
+  projects  Project[]
+  DataViz   DataViz?  @relation(fields: [dataVizId], references: [id])
+  dataVizId Int?      @db.SmallInt
 }
 
 model Work {
   id          Int       @id @default(autoincrement()) @db.SmallInt
-  createdAt   DateTime? @default(now()) @db.Timestamptz(6)
+  createdAt   DateTime  @default(now()) @db.Timestamptz(6)
   company     String    @default("") @db.VarChar
   position    String    @default("") @db.VarChar
   startDate   DateTime  @default(now()) @db.Timestamp
