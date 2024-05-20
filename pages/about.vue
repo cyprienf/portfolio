@@ -14,9 +14,10 @@
 
         <li>
           I love watching movies and reading books, my favorite genres are science-fiction, history
-          and adventure. I use <a href="https://firecore.com/infuse" target="_blank">Infuse</a> to
-          stream movies from my Synology NAS to my 🍎 Apple TV 4K. You can check my movies history
-          on my <a href="https://trakt.tv/users/cyprienf" target="_blank">Trakt account</a>.
+          and adventure. I use
+          <NuxtLink to="https://firecore.com/infuse" target="_blank">Infuse</NuxtLink> to stream
+          movies from my Synology NAS to my 🍎 Apple TV 4K. You can check my movies history on my
+          <NuxtLink to="https://trakt.tv/users/cyprienf" target="_blank">Trakt account</NuxtLink>.
         </li>
 
         <li>
@@ -28,18 +29,20 @@
           I love to work with Vue ecosystem (Vue / Nuxt). Currently I am learning some backend
           technologies (NestJS / Prisma). And I try to acquire some devops skills with GCP and
           Github Actions. You can find all my open source projects on my
-          <a href="https://github.com/CyprienF" target="_blank">Github account</a> and my work
-          experiments on my
-          <a href="https://www.linkedin.com/in/cyprien-floquet-095165109/" target="_blank"
-            >LinkedIn profile</a
+          <NuxtLink to="https://github.com/CyprienF" target="_blank">Github account</NuxtLink> and
+          my work experiments on my
+          <NuxtLink to="https://www.linkedin.com/in/cyprien-floquet-095165109/" target="_blank"
+            >LinkedIn profile</NuxtLink
           >.
         </li>
 
         <li>
           Another area I really enjoy is 📊 data visualization. I use the D3.js and Leaflet
-          libraries to create dashboards, graphs and maps. You can find all my data viz projects
+          libraries to create dashboards, graphs and maps. You can find all my dataviz projects
           <NuxtLink to="/dataviz">here</NuxtLink> and on my
-          <a href="https://observablehq.com/@cyprienf" target="_blank">Observable profile</a>.
+          <NuxtLink to="https://observablehq.com/@cyprienf" target="_blank"
+            >Observable profile</NuxtLink
+          >.
         </li>
 
         <li>
@@ -48,8 +51,8 @@
         </li>
 
         <li>
-          To deploy applications I use Netlify, Supabase and Google Cloud Plateform. I use Github
-          Actions to deploy automatically.
+          To deploy applications I mainly use Netlify, Supabase and Google Cloud Plateform (Cloud
+          Run). And to deploy automatically I work with Github Actions.
         </li>
       </ul>
     </div>
