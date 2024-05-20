@@ -7,7 +7,7 @@
       <img
         v-for="skill in project.skills"
         :key="skill.id"
-        :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/icons/skills/${skill.logo}.png`"
+        :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/icons/skills/${skill.logo}`"
         :alt="skill.name"
         class="project-card__skills__logo"
       />

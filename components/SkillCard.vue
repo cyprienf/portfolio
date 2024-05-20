@@ -2,7 +2,7 @@
   <div class="skill-card">
     <img
       class="skill-card__logo"
-      :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/icons/skills/${skill.logo}.png`"
+      :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/icons/skills/${skill.logo}`"
     />
     <div class="skill-card__texts">
       <div class="skill-card__texts__name">{{ skill.name }}</div>

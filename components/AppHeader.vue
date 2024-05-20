@@ -5,7 +5,7 @@
       <NuxtLink :to="{ path: '/', hash: '#works' }"><li>Works</li></NuxtLink>
       <NuxtLink :to="{ path: '/', hash: '#skills' }"><li>Skills</li></NuxtLink>
       <NuxtLink :to="{ path: '/', hash: '#projects' }"><li>Projects</li></NuxtLink>
-      <NuxtLink :to="{ path: '/dataviz' }"><li>Data Viz</li></NuxtLink>
+      <NuxtLink :to="{ path: '/dataviz' }"><li>DataViz</li></NuxtLink>
       <NuxtLink :to="{ path: '/about' }"><li>About</li></NuxtLink>
     </ul>
   </div>

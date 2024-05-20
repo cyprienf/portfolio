@@ -42,9 +42,8 @@ const { dataVizProjects } = storeToRefs(dataVizStore);
   gap: $spacing-xxlarge;
 
   &__projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 
     &__card {
