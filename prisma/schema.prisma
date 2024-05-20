@@ -48,9 +48,8 @@ model Skill {
   category   SkillCategory @relation(fields: [categoryId], references: [id])
   categoryId Int           @db.SmallInt
 
-  projects  Project[]
-  DataViz   DataViz?  @relation(fields: [dataVizId], references: [id])
-  dataVizId Int?      @db.SmallInt
+  projects Project[]
+  dataViz  DataViz[]
 }
 
 model Work {

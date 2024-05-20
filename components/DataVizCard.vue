@@ -1,7 +1,18 @@
 <template>
   <NuxtLink :to="dataViz.link" target="_blank">
     <div class="dataviz-card">
-      <p class="dataviz-card__title">{{ dataViz.name }}</p>
+      <div class="dataviz-card__infos">
+        <p class="dataviz-card__infos__title">{{ dataViz.name }}</p>
+        <div class="dataviz-card__infos__skills">
+          <img
+            v-for="skill in dataViz.skills"
+            :key="skill.id"
+            :title="skill.name"
+            :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/icons/skills/${skill.logo}`"
+            class="dataviz-card__infos__skills__logo"
+          />
+        </div>
+      </div>
     </div>
   </NuxtLink>
 </template>
@@ -29,13 +40,27 @@ const thumbnailUrl = ref(
     v-bind(thumbnailUrl) no-repeat;
   background-size: cover;
 
-  &__title {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-shadow: 2px 2px 4px #000000;
+  &__infos {
     position: absolute;
     bottom: 25px;
+
+    &__title {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    &__skills {
+      margin-top: 10px;
+      display: flex;
+      gap: 5px;
+
+      &__logo {
+        width: 1.2rem;
+        filter: drop-shadow(2px 2px 4px #000000);
+      }
+    }
   }
 }
 </style>
