@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@pinia/nuxt', '@nuxt/ui'],
   css: ['@/assets/styles/main.scss'],
+  ui: {
+    icons: ['uil'],
+  },
   router: {
     options: {
       scrollBehaviorType: 'smooth',

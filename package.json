@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/ui": "^2.16.0",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@prisma/client": "5.13.0",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
@@ -29,6 +30,7 @@
     "vite-svg-loader": "4.0.0"
   },
   "dependencies": {
+    "@iconify-json/uil": "1.1.8",
     "@pinia/nuxt": "0.5.1"
   }
 }

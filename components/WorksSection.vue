@@ -18,17 +18,17 @@
       </div>
     </div>
 
-    <NuxtLink
-      to="https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/cv.pdf"
-      target="_blank"
-    >
-      <Button
-        class="works-section__cv"
-        icon="pi pi-download"
-        label="Curriculum vitae"
-        severity="contrast"
-      />
-    </NuxtLink>
+    <div class="works-section__cv">
+      <UButton
+        color="black"
+        variant="solid"
+        icon="i-uil-cloud-download"
+        size="md"
+        to="https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/cv.pdf"
+        target="_blank"
+        >Curriculum vitae</UButton
+      >
+    </div>
   </div>
 </template>
 
@@ -84,11 +84,6 @@ const formatDate = (date: string | null): string => {
 
   &__cv {
     margin-top: 20px;
-    font-size: 0.95rem;
-
-    :deep(.p-button-icon) {
-      margin-right: 10px;
-    }
   }
 }
 </style>

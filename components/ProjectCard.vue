@@ -14,23 +14,32 @@
     </div>
 
     <div class="project-card__links">
-      <NuxtLink
-        class="project-card__links__button"
-        :to="project.github?.toString()"
-        target="_blank"
-        rel="noopener"
-      >
-        <Button icon="pi pi-github" label="Github" severity="contrast" />
-      </NuxtLink>
+      <div class="project-card__links__button">
+        <UButton
+          color="black"
+          variant="solid"
+          icon="i-uil-github"
+          :to="project.github?.toString()"
+          target="_blank"
+          size="md"
+          block
+          >Github</UButton
+        >
+      </div>
 
-      <NuxtLink
-        class="project-card__links__button"
-        :to="project.link?.toString()"
-        target="_blank"
-        rel="noopener"
-      >
-        <Button icon="pi pi-link" label="Website" severity="secondary" outlined />
-      </NuxtLink>
+      <div class="project-card__links__button">
+        <UButton
+          color="gray"
+          variant="solid"
+          icon="i-uil-link"
+          :to="project.link?.toString()"
+          target="_blank"
+          size="md"
+          outlined
+          block
+          >Link</UButton
+        >
+      </div>
     </div>
   </div>
 </template>
