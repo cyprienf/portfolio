@@ -8,10 +8,35 @@
       <NuxtLink :to="{ path: '/dataviz' }"><li>DataViz</li></NuxtLink>
       <NuxtLink :to="{ path: '/about' }"><li>About</li></NuxtLink>
     </ul>
+
+    <div class="app-header__mode">
+      <Button
+        :icon="$colorMode.preference === 'light' ? 'pi pi-moon' : 'pi pi-sun'"
+        severity="secondary"
+        text
+        rounded
+        @click="updateColorMode"
+      />
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { usePrimeVue } from 'primevue/config';
+
+const colorMode = useColorMode();
+
+const PrimeVue = usePrimeVue();
+
+const updateColorMode = () => {
+  console.log(colorMode.preference);
+  if (colorMode.preference === 'light') {
+    PrimeVue.changeTheme('aura-light-green', 'aura-dark-green', 'theme-link', () => {});
+  } else {
+    PrimeVue.changeTheme('aura-dark-green', 'aura-light-green', 'theme-link', () => {});
+  }
+};
+</script>
 
 <style scoped lang="scss">
 .app-header {
@@ -30,6 +55,9 @@
 
     font-weight: $font-weight-small;
     font-size: calc($font-medium * 0.9);
+  }
+
+  &__mode {
   }
 }
 </style>
