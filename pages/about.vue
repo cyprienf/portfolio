@@ -46,8 +46,9 @@
         </li>
 
         <li>
-          I use a 💻 Macbook Pro to develop web apps with some softwares and websites: VSCode,
-          CodeRunner, TablePlus, iTerm, Insomnia, Trello, Notion, To Do, Slack, Firefox and Alfred.
+          I use a 💻 Macbook Pro to develop web applications with some softwares and websites:
+          VSCode, CodeRunner, TablePlus, iTerm, Insomnia, Trello, Notion, To Do, Slack, Firefox and
+          Alfred.
         </li>
 
         <li>

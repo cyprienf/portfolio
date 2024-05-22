@@ -52,7 +52,7 @@ defineProps<{
     }
   }
 
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e6eaf0;
   padding: 0.75rem;
   border-radius: 0.25rem;
 }

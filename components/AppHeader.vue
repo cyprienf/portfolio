@@ -8,14 +8,37 @@
       <NuxtLink :to="{ path: '/dataviz' }"><li>DataViz</li></NuxtLink>
       <NuxtLink :to="{ path: '/about' }"><li>About</li></NuxtLink>
     </ul>
+
+    <UButton
+      :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
+      color="gray"
+      variant="ghost"
+      aria-label="Theme"
+      @click="isDark = !isDark"
+    />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const colorMode = useColorMode();
+
+const isDark = computed({
+  get() {
+    return colorMode.value === 'dark';
+  },
+  set() {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
+  },
+});
+</script>
 
 <style scoped lang="scss">
 .app-header {
   margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
   &__categories {
     display: flex;

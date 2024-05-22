@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/ui": "^2.16.0",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@prisma/client": "5.13.0",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
@@ -21,7 +22,6 @@
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
     "nuxt": "3.11.2",
-    "nuxt-primevue": "0.3.1",
     "prettier": "2.8.8",
     "prisma": "5.13.0",
     "sass": "1.63.3",
@@ -30,8 +30,7 @@
     "vite-svg-loader": "4.0.0"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.1",
-    "primeicons": "7.0.0",
-    "primevue": "3.52.0"
+    "@iconify-json/simple-icons": "1.1.102",
+    "@pinia/nuxt": "0.5.1"
   }
 }
