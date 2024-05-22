@@ -5,8 +5,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@pinia/nuxt', '@nuxt/ui'],
   css: ['@/assets/styles/main.scss'],
+  colorMode: {
+    preference: 'light',
+  },
   ui: {
-    icons: ['uil'],
+    icons: ['simple-icons'],
   },
   router: {
     options: {

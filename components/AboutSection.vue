@@ -15,29 +15,33 @@
 
     <div class="about-section__socials">
       <NuxtLink to="https://github.com/CyprienF" target="_blank">
-        <Github class="about-section__socials__icon" />
+        <UIcon name="i-simple-icons-github" class="about-section__socials__icon" />
       </NuxtLink>
 
       <NuxtLink to="https://observablehq.com/@cyprienf?tab=profile" target="_blank">
-        <Observablehq class="about-section__socials__icon" />
+        <UIcon name="i-simple-icons-observable" class="about-section__socials__icon" />
       </NuxtLink>
 
       <NuxtLink to="https://www.linkedin.com/in/cyprien-floquet-095165109/" target="_blank">
-        <Linkedin class="about-section__socials__icon" />
+        <UIcon
+          name="i-simple-icons-linkedin"
+          class="about-section__socials__icon"
+          style="color: #0a66c2"
+        />
       </NuxtLink>
 
       <NuxtLink to="https://trakt.tv/users/cyprienf" target="_blank">
-        <Trakt class="about-section__socials__icon" />
+        <UIcon
+          name="i-simple-icons-trakt"
+          class="about-section__socials__icon"
+          style="color: #ee161f"
+        />
       </NuxtLink>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import Github from '@/assets/icons/socials/github.svg';
-import Linkedin from '@/assets/icons/socials/linkedin.svg';
-import Observablehq from '@/assets/icons/socials/observablehq.svg';
-import Trakt from '@/assets/icons/socials/trakt.svg';
 import picture from '@/assets/picture.jpg';
 </script>
 

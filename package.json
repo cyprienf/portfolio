@@ -30,7 +30,7 @@
     "vite-svg-loader": "4.0.0"
   },
   "dependencies": {
-    "@iconify-json/uil": "1.1.8",
+    "@iconify-json/simple-icons": "1.1.102",
     "@pinia/nuxt": "0.5.1"
   }
 }

@@ -22,7 +22,7 @@
       <UButton
         color="black"
         variant="solid"
-        icon="i-uil-cloud-download"
+        icon="i-heroicons-cloud-arrow-down-solid"
         size="md"
         to="https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/cv.pdf"
         target="_blank"

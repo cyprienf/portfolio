@@ -18,10 +18,9 @@
         <UButton
           color="black"
           variant="solid"
-          icon="i-uil-github"
+          icon="i-simple-icons-github"
           :to="project.github?.toString()"
           target="_blank"
-          size="md"
           block
           >Github</UButton
         >
@@ -31,10 +30,9 @@
         <UButton
           color="gray"
           variant="solid"
-          icon="i-uil-link"
+          icon="i-heroicons-link-16-solid"
           :to="project.link?.toString()"
           target="_blank"
-          size="md"
           outlined
           block
           >Link</UButton
@@ -58,7 +56,7 @@ defineProps<{
   flex-direction: column;
 
   padding: $spacing-medium;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e6eaf0;
   border-radius: 0.25rem;
 
   &__name {
@@ -75,7 +73,7 @@ defineProps<{
     display: flex;
     gap: 0.3rem;
 
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 
     &__logo {
       width: 1.2rem;
@@ -85,11 +83,6 @@ defineProps<{
   &__links {
     display: flex;
     gap: 10px;
-
-    :deep(.p-button) {
-      width: 100%;
-      font-size: 0.95rem;
-    }
 
     &__button {
       width: 100%;
