@@ -9,7 +9,7 @@
             v-for="skill in dataViz.skills"
             :key="skill.id"
             :title="skill.name"
-            :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/icons/skills/${skill.logo}`"
+            :src="`https://uyumfygdlasbgkivtobp.supabase.co/storage/v1/object/public/portfolio/skills/${skill.logo}`"
             class="dataviz-card__infos__skills__logo"
           />
         </div>
