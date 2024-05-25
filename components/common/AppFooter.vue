@@ -1,15 +1,15 @@
 <template>
   <div class="app-footer">
     Cyprien FLOQUET <br />
-    © 2024
+    © {{ new Date().getFullYear() }}
   </div>
 </template>
 
 <style lang="scss" scoped>
 .app-footer {
-  color: #a4a4a4;
+  color: $grey;
   font-size: $font-small;
   text-align: center;
-  line-height: 1.5;
+  line-height: $line-height-xlarge;
 }
 </style>

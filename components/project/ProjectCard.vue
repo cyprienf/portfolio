@@ -33,7 +33,6 @@
           icon="i-heroicons-link-16-solid"
           :to="project.link?.toString()"
           target="_blank"
-          outlined
           block
           >Link</UButton
         >
@@ -51,38 +50,40 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
+$logo-size: 1.2rem;
+
 .project-card {
   display: flex;
   flex-direction: column;
 
   padding: $spacing-medium;
-  border: 1px solid #e6eaf0;
-  border-radius: 0.25rem;
+  border: 1px solid $border;
+  border-radius: $border-radius-medium;
 
   &__name {
-    font-weight: 500;
-    margin-bottom: 1em;
+    font-weight: $font-weight-small;
+    margin-bottom: $spacing-medium;
   }
 
   &__description {
-    margin-bottom: 0.75em;
-    font-size: 0.95em;
+    margin-bottom: $spacing-small;
+    font-size: calc($font-medium * 0.95);
   }
 
   &__skills {
     display: flex;
-    gap: 0.3rem;
+    gap: $spacing-xxsmall;
 
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-medium;
 
     &__logo {
-      width: 1.2rem;
+      width: $logo-size;
     }
   }
 
   &__links {
     display: flex;
-    gap: 10px;
+    gap: $spacing-small;
 
     &__button {
       width: 100%;

@@ -38,7 +38,7 @@ const isDark = computed({
 
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: $spacing-medium;
 
   &__categories {
     display: flex;
@@ -47,8 +47,8 @@ const isDark = computed({
 
     gap: calc($spacing-medium * 3);
 
-    @media (width <= 768px) {
-      gap: calc($spacing-medium * 1);
+    @media (width <= $breakpoint-medium) {
+      gap: $spacing-medium;
     }
 
     font-weight: $font-weight-small;

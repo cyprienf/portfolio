@@ -3,6 +3,7 @@
     <div class="dataviz-card">
       <div class="dataviz-card__infos">
         <p class="dataviz-card__infos__title">{{ dataViz.name }}</p>
+
         <div class="dataviz-card__infos__skills">
           <img
             v-for="skill in dataViz.skills"
@@ -30,11 +31,14 @@ const thumbnailUrl = ref(
 </script>
 
 <style scoped lang="scss">
+$card-size: 12.5rem;
+$logo-size: 1.25rem;
+
 .dataviz-card {
   position: relative;
-  padding: 20px;
-  height: 200px;
-  border-radius: 8px;
+  padding: $spacing-medium;
+  height: $card-size;
+  border-radius: $border-radius-large;
 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5)),
     v-bind(thumbnailUrl) no-repeat;
@@ -42,23 +46,23 @@ const thumbnailUrl = ref(
 
   &__infos {
     position: absolute;
-    bottom: 25px;
+    bottom: $spacing-small;
 
     &__title {
-      color: #ffffff;
-      font-weight: 600;
-      font-size: 1.1rem;
-      text-shadow: 2px 2px 4px #000000;
+      color: $white;
+      font-weight: $font-weight-medium;
+      font-size: calc($font-medium * 1.1);
+      text-shadow: 2px 2px 4px $black;
     }
 
     &__skills {
-      margin-top: 10px;
+      margin-top: $spacing-xsmall;
       display: flex;
-      gap: 5px;
+      gap: $spacing-xxsmall;
 
       &__logo {
-        width: 1.2rem;
-        filter: drop-shadow(2px 2px 4px #000000);
+        width: $logo-size;
+        filter: drop-shadow(2px 2px 4px $black);
       }
     }
   }

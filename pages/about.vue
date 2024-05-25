@@ -64,33 +64,33 @@
 
 <style scoped lang="scss">
 .about-page {
-  padding: 1.5rem 10rem 1rem 10rem;
+  padding: $page-padding;
 
-  @media (width <= 768px) {
-    padding: 2rem 2rem 1rem 2rem;
+  @media (width <= $breakpoint-medium) {
+    padding: $page-padding-medium-devices;
   }
 
   display: flex;
   flex-direction: column;
-  gap: $spacing-xxlarge;
+  gap: $spacing-xlarge;
 
   &__infos {
     &__welcome {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
+      font-size: calc($font-medium * 1.1);
+      margin-bottom: $spacing-medium;
     }
 
     &__list {
       list-style: inside;
-      font-size: 1.05rem;
-      line-height: 1.5;
+      font-size: calc($font-medium * 1.05);
+      line-height: $line-height-xlarge;
 
       a {
         text-decoration: underline;
       }
 
       li {
-        margin-bottom: 0.5rem;
+        margin-bottom: $spacing-xsmall;
       }
     }
   }
