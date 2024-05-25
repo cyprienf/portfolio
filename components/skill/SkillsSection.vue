@@ -22,13 +22,13 @@ const { skills } = storeToRefs(skillStore);
 
 <style lang="scss" scoped>
 .skills-section {
-  margin-top: 1rem;
+  margin-top: $spacing-medium;
 
   &__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: $spacing-xxsmall;
   }
 }
 </style>

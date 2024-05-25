@@ -31,20 +31,20 @@ const { dataVizProjects } = storeToRefs(dataVizStore);
 
 <style scoped lang="scss">
 .dataviz-page {
-  padding: 1.5rem 10rem 1rem 10rem;
+  padding: $page-padding;
 
-  @media (width <= 768px) {
-    padding: 2rem 2rem 1rem 2rem;
+  @media (width <= $breakpoint-medium) {
+    padding: $page-padding-medium-devices;
   }
 
   display: flex;
   flex-direction: column;
-  gap: $spacing-xxlarge;
+  gap: $spacing-xlarge;
 
   &__projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: $spacing-xsmall;
 
     &__card {
       flex-grow: 1;

@@ -46,21 +46,24 @@ import picture from '@/assets/picture.jpg';
 </script>
 
 <style lang="scss" scoped>
+$icon-about-size: 1.75rem;
+$picture-about-size: 4rem;
+
 .about-section {
   display: flex;
   flex-direction: column;
 
   &__picture img {
-    width: 4rem;
-    height: 4rem;
+    width: $picture-about-size;
+    height: $picture-about-size;
     border-radius: 50%;
     margin-bottom: $spacing-large;
   }
 
   &__bio {
-    font-size: 1rem;
+    font-size: $font-medium;
     margin-bottom: $spacing-large;
-    line-height: 1.3;
+    line-height: calc($line-height-medium * 1.3);
   }
 
   &__socials {
@@ -68,8 +71,8 @@ import picture from '@/assets/picture.jpg';
     gap: $spacing-medium;
 
     &__icon {
-      width: 1.75rem;
-      height: 1.75rem;
+      width: $icon-about-size;
+      height: $icon-about-size;
     }
   }
 }

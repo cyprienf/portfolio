@@ -11,14 +11,14 @@
 
 <style lang="scss" scoped>
 .main {
-  padding: 1.5rem 10rem 1rem 10rem;
+  padding: $page-padding;
 
-  @media (width <= 768px) {
-    padding: 2rem 2rem 1rem 2rem;
+  @media (width <= $breakpoint-medium) {
+    padding: $page-padding-medium-devices;
   }
 
   display: flex;
   flex-direction: column;
-  gap: $spacing-xxlarge;
+  gap: $spacing-xlarge;
 }
 </style>
