@@ -18,6 +18,12 @@
           <NuxtLink to="https://firecore.com/infuse" target="_blank">Infuse</NuxtLink> to stream
           movies from my Synology NAS to my 🍎 Apple TV 4K. You can check my movies history on my
           <NuxtLink to="https://trakt.tv/users/cyprienf" target="_blank">Trakt account</NuxtLink>.
+          My books history is also available on my
+          <NuxtLink
+            to="https://www.goodreads.com/user/show/178614114-cyprien-floquet"
+            target="_blank"
+            >Goodreads profile</NuxtLink
+          >.
         </li>
 
         <li>
