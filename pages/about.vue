@@ -33,7 +33,7 @@
 
         <li>
           I love to work with Vue ecosystem (Vue / Nuxt). Currently I am learning some backend
-          technologies (NestJS / Prisma). And I try to acquire some devops skills with GCP and
+          technologies (Fastify / Prisma). And I try to acquire some devops skills with GCP and
           Github Actions. You can find all my open source projects on my
           <NuxtLink to="https://github.com/CyprienF" target="_blank">Github account</NuxtLink> and
           my work experiments on my

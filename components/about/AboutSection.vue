@@ -7,7 +7,7 @@
     <TitleComponent label="👋 Hello there! I'm Cyprien, a software engineer" size="xlarge" />
 
     <p class="about-section__bio">
-      As a fullstack developer I love working with technologies like Vue, Nuxt, Nest.js and Prisma.
+      As a fullstack developer I love working with technologies like Vue, Nuxt, Fastify and Prisma.
       I'm also big fan of librairies like D3.js and Leaflet to make data vizualization dashboards,
       creating graphs and maps. I spend most of my free time watching movies, reading books and
       playing piano.
